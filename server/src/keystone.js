@@ -8,6 +8,7 @@ keystone.init({
 	'auth': true,
 	'views': 'templates/views',
 	'view engine': 'pug',
+	'port': process.env.PORT || 4000,
 	'static': `../../client/build`
 });
 
