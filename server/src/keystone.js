@@ -8,6 +8,7 @@ keystone.init({
 	'auth': true,
 	'views': 'templates/views',
 	'view engine': 'pug',
+	'static': `../../client/build`
 });
 
 keystone.import('models');
