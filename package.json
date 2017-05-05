@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"start:server": "cd server && yarn start",
+		"start:client": "yarn clean:client && cd client && yarn start",
+		"build": "yarn build:client && yarn build:server",
+		"build:client": "yarn clean:client && cd client && yarn build",
+		"clean:client": "rm -rf client/build",
+		"build:server": "cd server && yarn build"
+	}
+}

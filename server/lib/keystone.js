@@ -9,7 +9,9 @@ keystone.init({
 	'auto update': true,
 	'auth': true,
 	'views': 'templates/views',
-	'view engine': 'pug'
+	'view engine': 'pug',
+	'port': process.env.PORT || 4000,
+	'static': '../../client/build'
 });
 
 keystone.import('models');
